@@ -5,7 +5,7 @@ import styles from "./home.module.css";
 function Home() {
   const [result, setResult] = useState("pizza");
   const [item, setItem] = useState();
-  const [search, setSearch]  = useState();
+  const [search, setSearch]  = useState("pizza");
   const navigate = useNavigate();
 
   async function Search(query) {
