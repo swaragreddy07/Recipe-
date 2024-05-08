@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make the container occupy 100% of its parent's width */
+  justify-content: center;
+  align-items: center;
+}
+/* Heading style */
+.h2 {
+  font-size: 2.2rem; /* Adjust font size as needed */
+  color: #1208ce; /* Adjust color as needed */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+  transition: text-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* On hover, increase the text shadow to give a subtle effect */
+.h2:hover {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Input style */
+.input {
+  margin-top: 1rem;
+  padding: 0.5rem; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Adjust border styles as needed */
+  border-radius: 2rem; /* Adjust border radius as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  width: 20rem; /* Adjust width as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+input:focus {
+  outline: none;
+  color: #716f6f;
+}
+/* Placeholder style */
+.input::placeholder {
+  color: #999; /* Adjust placeholder color as needed */
+}
+
+.H2 {
+  margin-top: 2rem;
+  font-size: 1.6rem; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+  color: #0d94c6; /* Adjust color as needed */
+
+  text-align: center;
+  margin-bottom: 1rem; /* Adjust margin as needed */
+}
+
+.border {
+  display: flex;
+ 
+  flex-direction: column;
+
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 15rem;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff; /* Background color of the "card" */
+  border: 1px solid #dddddd; /* Border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow */
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+  padding: 1rem; /* Padding inside the "card" */
+}
+
+.img {
+  width: 15rem;
+  height: 9rem;
+  object-fit: cover; /* Ensure the image fills the container */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.P {
+  margin-top: 1rem;
+
+  font-weight: bold;
+  color: #0dc6b6;
+}
+
+.h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.button{
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  width: fit-content;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(41, 41, 41);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 2rem;
+}
+
+.para {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Adjust text color as needed */
+  cursor: pointer;
+}
+
+
+.view{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 3rem;
+  justify-content: center;
+
+}
+
+.Img{
+  height: 50%;
+  width: 50%;
+  border-radius: 2rem;
+}
+
+.last{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 0.9rem;
+}
+
+.ing{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+@media(max-width:900px){
+  .view{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .Img{
+    height: 80%;
+    width: 80%;
+  }
+}
