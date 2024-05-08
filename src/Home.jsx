@@ -43,10 +43,11 @@ function Home() {
           placeholder="Enter items..."
           onChange={(e) => {
             handleChange(e.target.value);
+            setSearch(e.target.value)
           }}
         />
       </div>
-      <h2 className={styles.H2}>Showing Search results for {result}</h2>
+      <h2 className={styles.H2}>Showing Search results for {search}</h2>
       <div className={styles.container}>
         {item &&
           item["data"].recipes.map((recipe, index) => (
